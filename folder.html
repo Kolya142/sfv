@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>simple file viewer</title>
+        <style>
+            html {
+                background-color: rgb(190, 196, 114);
+            }
+            * {
+                border-radius: 4px;
+            }
+            div {
+                width: fit-content;
+                background-color: rgb(56, 182, 113);
+            }
+            a {
+                font-size: xx-large;
+            }
+            xxl {
+                font-size: xx-large;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="position: absolute; left: 0.2%; top: 0; width: 99.6%; height: 35px; background-color: gray;">
+            <div style="position: absolute; left: 5px; top: 5px">
+                SFV
+            </div>
+            <div style="position: absolute; left: 50%; top: 5px">
+                path: %path%
+            </div>
+            <div style="position: absolute; right: 5px; top: 5px">
+                server: %url%
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div style="margin: auto; background-color: rgba(0,0,0,0);">
+            <xxl>Files:</xxl>
+            <hr>
+            <a href="/">..</a>
+            <br>
+            <a href="">.</a>
+            <br>
+            %urls%
+        </div>
+    </body>
+</html>
